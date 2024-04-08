@@ -9,7 +9,6 @@ namespace App\Providers\Api;
 
 
 use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Facades\Log;
 use Laravel\Socialite\Two\GoogleProvider as BaseGoogle;
 
 class GoogleProvider extends BaseGoogle
