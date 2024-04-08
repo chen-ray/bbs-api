@@ -27,8 +27,8 @@ class GoogleOauth2 extends Controller
             'client_secret' => config('service.client_secret'),
             'redirect_uris' => config('service.redirect'),
         ];
-        $config = json_decode($this->config, true);
-        $this->client = new Client($config);
+        //$config = json_decode($this->config, true);
+        $this->client = new Client($this->config);
     }
 
     public function index(){
