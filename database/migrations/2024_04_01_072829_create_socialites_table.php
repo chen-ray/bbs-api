@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('nickname')->nullable();
             $table->string('email')->nullable();
             $table->string('avatar')->nullable();
-            $table->string('token')->nullable();
+            $table->string('token', 500)->nullable();
             $table->string('refresh_token')->nullable();
             $table->unsignedInteger('expires_in')->default(0)->nullable();
             $table->string('extra1')->nullable();
